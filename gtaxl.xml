@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- FORKS -->
-  <!-- Contain patches necessary for working around the old kernel not having (anywhere near the required level of) eBPF support - REQUIRED, otherwise no boot -->
+  <!-- Contain patches necessary for working around the old kernel not having (anywhere near the required level of) eBPF support
+       or any cgroup v2 support - REQUIRED, otherwise no boot -->
   <remove-project name="platform/frameworks/libs/net" />
   <project name="K9100ii/android_frameworks_libs_net" path="frameworks/libs/net" remote="github" revision="lineage-20.0-nobpf" />
   <remove-project name="LineageOS/android_packages_modules_Connectivity" />

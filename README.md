@@ -2,11 +2,11 @@
 
 `gtaxlwifi` is the codename for the WiFi-only variant of the Samsung Galaxy Tab A 10.1" (2016), with model SM-T580.
 
-`gtaxllte` is the codename for the LTE variant of the Samsung Galaxy Tab A 10.1" (2016), with model SM-T585, and also with SM-T585N0 and SM-T585C for Korea and China respectively.
+`gtaxllte` is the codename for the LTE variant of the Samsung Galaxy Tab A 10.1" (2016), with model SM-T585, and also with SM-T585N0, SM-T585C, and SM-T587 for Korea, China, and Turkey respectively.
 
 `gtanotexlwifi` is the codename for the WiFi-only variant of the Samsung Galaxy Tab A 10.1" (2016) **with S-Pen**, with model SM-P580, and also with SM-P583 for China.
 
-`gtanotexllte` is the codename for the LTE variant of the Samsung Galaxy Tab A 10.1" (2016) **with S-Pen**, with models SM-P585, SM-P585M, SM-P585Y, SM-P585N0, and SM-P588C.
+`gtanotexllte` is the codename for the LTE variant of the Samsung Galaxy Tab A 10.1" (2016) **with S-Pen**, with models SM-P585, SM-P585M, SM-P585Y, SM-P585N0, SM-P587, and SM-P588C.
 
 Some extremely basic instructions:
 
@@ -33,7 +33,7 @@ git clone https://github.com/K9100ii/gtaxl-manifests.git -b lineage-20.0 .repo/l
 repo sync --force-sync --no-tags --no-clone-bundle -c
 ```
 
-- Forks from LineageOS repositories may become out-of-date from new changes until I (@K9100ii) get around to updating them again. Before building, you'll need to go through gtaxl.xml, and, for forks that have remove-project lines with names starting with "LineageOS/", update (rebase) them from upstream repositories. For example, for frameworks/base (note the second and third commands only need to be ran once per repository):
+- Forks of LineageOS repositories will become out-of-date from new changes since I (@K9100ii) have moved on from LineageOS 20.0 completely, and won't be updating them anymore. Before building, you'll need to go through gtaxl.xml, and, for forks that have remove-project lines with names starting with "LineageOS/", update (rebase) them from upstream repositories. For example, for frameworks/base (note the second and third commands only need to be ran once per repository):
 ```
 cd frameworks/base
 git remote add lineage https://github.com/LineageOS/android_frameworks_base
