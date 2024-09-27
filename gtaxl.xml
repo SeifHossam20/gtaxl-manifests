@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- FORKS -->
-  <!-- Contain patches necessary for working around the old kernel not having (anywhere near the required level of) eBPF support
-       or any cgroup v2 support - REQUIRED, otherwise no boot -->
+  <!-- Custom Forks -->
   <project name="K9100ii/android_frameworks_base" path="frameworks/base" remote="github" revision="lineage-21.0-nocgroupv2" />
   <project name="K9100ii/android_packages_modules_Connectivity" path="packages/modules/Connectivity" remote="github" revision="lineage-21.0-nobpf" />
   <project name="K9100ii/android_packages_modules_DnsResolver" path="packages/modules/DnsResolver" remote="github" revision="lineage-21.0-nobpf" />
   <project name="K9100ii/android_system_bpf" path="system/bpf" remote="github" revision="lineage-21.0-nobpf" />
   <project name="K9100ii/android_system_core" path="system/core" remote="github" revision="lineage-21.0-nocgroupv2" />
   <project name="K9100ii/android_system_netd" path="system/netd" remote="github" revision="lineage-21.0-nobpf" />
-
-  <!-- Contains a patch for improving graphical performance - Technically optional -->
   <project name="K9100ii/android_frameworks_native" path="frameworks/native" remote="github" revision="lineage-21.0" />
-  <!-- END OF FORKS -->
 
   <!-- Device trees -->
   <project name="K9100ii/android_device_samsung_gtaxl-common" path="device/samsung/gtaxl-common" remote="github" revision="lineage-21" />
