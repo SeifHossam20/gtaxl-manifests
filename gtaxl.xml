@@ -3,21 +3,14 @@
   <!-- FORKS -->
   <!-- Contain patches necessary for working around the old kernel not having (anywhere near the required level of) eBPF support
        or any cgroup v2 support - REQUIRED, otherwise no boot -->
-  <remove-project name="LineageOS/android_frameworks_base" />
   <project name="K9100ii/android_frameworks_base" path="frameworks/base" remote="github" revision="lineage-21.0-nocgroupv2" />
-  <remove-project name="LineageOS/android_packages_modules_Connectivity" />
   <project name="K9100ii/android_packages_modules_Connectivity" path="packages/modules/Connectivity" remote="github" revision="lineage-21.0-nobpf" />
-  <remove-project name="platform/packages/modules/DnsResolver" />
   <project name="K9100ii/android_packages_modules_DnsResolver" path="packages/modules/DnsResolver" remote="github" revision="lineage-21.0-nobpf" />
-  <remove-project name="LineageOS/android_system_bpf" />
   <project name="K9100ii/android_system_bpf" path="system/bpf" remote="github" revision="lineage-21.0-nobpf" />
-  <remove-project name="LineageOS/android_system_core" />
   <project name="K9100ii/android_system_core" path="system/core" remote="github" revision="lineage-21.0-nocgroupv2" />
-  <remove-project name="LineageOS/android_system_netd" />
   <project name="K9100ii/android_system_netd" path="system/netd" remote="github" revision="lineage-21.0-nobpf" />
 
   <!-- Contains a patch for improving graphical performance - Technically optional -->
-  <remove-project name="LineageOS/android_frameworks_native" />
   <project name="K9100ii/android_frameworks_native" path="frameworks/native" remote="github" revision="lineage-21.0" />
   <!-- END OF FORKS -->
 
@@ -27,10 +20,12 @@
   <project name="K9100ii/android_device_samsung_gtaxllte" path="device/samsung/gtaxllte" remote="github" revision="lineage-21" />
   <project name="K9100ii/android_device_samsung_gtanotexlwifi" path="device/samsung/gtanotexlwifi" remote="github" revision="lineage-21" />
   <project name="K9100ii/android_device_samsung_gtanotexllte" path="device/samsung/gtanotexllte" remote="github" revision="lineage-21" />
+
   <!-- Vendor trees -->
   <project name="K9100ii/android_vendor_samsung_gtaxl-common" path="vendor/samsung/gtaxl-common" remote="github" revision="lineage-21" />
   <project name="K9100ii/android_vendor_samsung_gtaxlwifi" path="vendor/samsung/gtaxlwifi" remote="github" revision="lineage-21" />
   <project name="K9100ii/android_vendor_samsung_gtaxllte" path="vendor/samsung/gtaxllte" remote="github" revision="lineage-21" />
+
   <!-- Kernel sources -->
   <project name="K9100ii/android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="github" revision="lineage-21" />
 
