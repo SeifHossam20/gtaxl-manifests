@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote  name="K9100ii"
+		fetch="https://github.com/K9100ii" />
+ 
+  <!-- Device trees -->
+  <project name="android_device_samsung_gtaxl-common" path="device/samsung/gtaxl-common" remote="K9100ii" revision="lineage-21" />
+  <project name="android_device_samsung_gtaxlwifi" path="device/samsung/gtaxlwifi" remote="K9100ii" revision="lineage-21" />
+  <project name="android_device_samsung_gtaxllte" path="device/samsung/gtaxllte" remote="K9100ii" revision="lineage-21" />
+  <project name="android_device_samsung_gtanotexlwifi" path="device/samsung/gtanotexlwifi" remote="K9100ii" revision="lineage-21" />
+  <project name="android_device_samsung_gtanotexllte" path="device/samsung/gtanotexllte" remote="K9100ii" revision="lineage-21" />
+  <!-- Vendor trees -->
+  <project name="android_vendor_samsung_gtaxl-common" path="vendor/samsung/gtaxl-common" remote="K9100ii" revision="lineage-21" />
+  <project name="android_vendor_samsung_gtaxlwifi" path="vendor/samsung/gtaxlwifi" remote="K9100ii" revision="lineage-21" />
+  <project name="android_vendor_samsung_gtaxllte" path="vendor/samsung/gtaxllte" remote="K9100ii" revision="lineage-21" />
+  <!-- Kernel sources -->
+  <project name="android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="K9100ii" revision="lineage-21" />
+  <!-- Hardware sources -->
+  <project name="K9100ii/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-21" />
+</manifest>
