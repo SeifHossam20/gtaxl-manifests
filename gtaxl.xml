@@ -16,5 +16,5 @@
   <!-- Kernel sources -->
   <project name="android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="K9100ii" revision="lineage-21" />
   <!-- Hardware sources -->
-  <project name="K9100ii/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-21" />
+  <project name="K9100ii/android_hardware_samsung" path="hardware/samsung" remote="K9100ii" revision="lineage-21" />
 </manifest>
