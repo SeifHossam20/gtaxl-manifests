@@ -15,6 +15,4 @@
   <project name="android_vendor_samsung_gtaxllte" path="vendor/samsung/gtaxllte" remote="K9100ii" revision="lineage-21" />
   <!-- Kernel sources -->
   <project name="android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="K9100ii" revision="lineage-21" />
-  <!-- Hardware sources -->
-  <project name="android_hardware_samsung" path="hardware/samsung" remote="K9100ii" revision="lineage-21" />
 </manifest>
