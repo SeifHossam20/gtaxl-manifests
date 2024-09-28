@@ -2,9 +2,11 @@
 <manifest>
 	<remote  name="K9100ii"
 		fetch="https://github.com/K9100ii" />
+	<remote  name="SeifHossam20"
+		fetch="https://github.com/SeifHossam20" />
  
   <!-- Device trees -->
-  <project name="android_device_samsung_gtaxl-common" path="device/samsung/gtaxl-common" remote="K9100ii" revision="lineage-21" />
+  <project name="android_device_samsung_gtaxl-common" path="device/samsung/gtaxl-common" remote="SeifHossam20" revision="lineage-21" />
   <project name="android_device_samsung_gtaxlwifi" path="device/samsung/gtaxlwifi" remote="K9100ii" revision="lineage-21" />
   <project name="android_device_samsung_gtaxllte" path="device/samsung/gtaxllte" remote="K9100ii" revision="lineage-21" />
   <project name="android_device_samsung_gtanotexlwifi" path="device/samsung/gtanotexlwifi" remote="K9100ii" revision="lineage-21" />
