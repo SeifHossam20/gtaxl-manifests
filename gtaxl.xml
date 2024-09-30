@@ -32,6 +32,7 @@
   <remove-project path="packages/modules/Connectivity" />
   <remove-project path="packages/modules/DnsResolver" />
   <remove-project path="system/bpf" />
+  <remove-project path="system/netd" />
   <remove-project name="android_system_core" />
   <remove-project name="android_frameworks_native" />
  <!-- FORKS -->
