@@ -33,7 +33,7 @@
   <remove-project name="LineageOS/android_system_bpf" />
   <remove-project name="LineageOS/android_system_netd" />
   <remove-project name="android_system_core" />
-  <remove-project name="LineageOS/android_frameworks_native" />
+  <remove-project name="android_frameworks_native" />
  <!-- FORKS -->
   <!-- Contain patches necessary for working around the old kernel not having (anywhere near the required level of) eBPF support
        or any cgroup v2 support - REQUIRED, otherwise no boot -->
