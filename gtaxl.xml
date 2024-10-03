@@ -33,7 +33,7 @@
   <remove-project name="platform/packages/modules/DnsResolver" />
   <remove-project name="LineageOS/android_system_bpf" />
   <remove-project name="crdroidandroid/android_system_netd" />
-  <remove-project name="RisingTechOSS/android_system_core" />
+  <remove-project name="crdroidandroid/android_system_core" />
   <remove-project name="RisingTechOSS/android_frameworks_native" />
  <!-- FORKS -->
   <!-- Contain patches necessary for working around the old kernel not having (anywhere near the required level of) eBPF support
