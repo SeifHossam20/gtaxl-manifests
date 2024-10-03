@@ -29,7 +29,7 @@
   <project name="android_hardware_samsung" path="hardware/samsung" remote="K9100ii" revision="lineage-21" />
 
   <remove-project name="LineageOS/android_frameworks_base" />
-  <remove-project name="LineageOS/android_packages_modules_DnsResolver" /
+  <remove-project name="LineageOS/android_packages_modules_DnsResolver" />
   <remove-project name="LineageOS/android_packages_modules_Connectivity" />
   <remove-project name="LineageOS/android_system_bpf" />
   <remove-project name="LineageOS/android_system_netd" />
