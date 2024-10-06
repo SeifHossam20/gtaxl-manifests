@@ -25,7 +25,7 @@ repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
 
 - Clone this repository to .repo/local_manifests for the manifest, gtaxl.xml, containing the repositories needed to build for these devices:
 ```
-git clone https://github.com/K9100ii/gtaxl-manifests.git -b 14.1 .repo/local_manifests
+git clone https://github.com/SeifHossam20/gtaxl-manifests.git -b 14.1 .repo/local_manifests
 ```
 
 - Sync all of the repositories in manifests (including LineageOS manifests):
@@ -33,7 +33,7 @@ git clone https://github.com/K9100ii/gtaxl-manifests.git -b 14.1 .repo/local_man
 repo sync --force-sync --no-tags --no-clone-bundle -c
 ```
 
-- Forks of LineageOS repositories may become out-of-date from new changes until I (@K9100ii) get around to updating them again. Before building, you'll need to go through gtaxl.xml, and, for forks that have remove-project lines with names starting with "LineageOS/", update (rebase) them from upstream repositories. For example, for frameworks/base (note the second and third commands only need to be ran once per repository):
+- Forks of LineageOS repositories may become out-of-date from new changes until he (@K9100ii) get around to updating them again. Before building, you'll need to go through gtaxl.xml, and, for forks that have remove-project lines with names starting with "LineageOS/", update (rebase) them from upstream repositories. For example, for frameworks/base (note the second and third commands only need to be ran once per repository):
 ```
 cd frameworks/base
 git remote add lineage https://github.com/LineageOS/android_frameworks_base
