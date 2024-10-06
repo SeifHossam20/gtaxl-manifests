@@ -25,7 +25,7 @@ repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
 
 - Clone this repository to .repo/local_manifests for the manifest, gtaxl.xml, containing the repositories needed to build for these devices:
 ```
-git clone https://github.com/K9100ii/gtaxl-manifests.git -b lineage-21.0 .repo/local_manifests
+git clone https://github.com/K9100ii/gtaxl-manifests.git -b 14.1 .repo/local_manifests
 ```
 
 - Sync all of the repositories in manifests (including LineageOS manifests):
