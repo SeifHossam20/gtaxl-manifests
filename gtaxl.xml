@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- FORKS -->
+  <!-- Contains a temporary general build fix - REQUIRED, until the fix is merged by upstream -->
+  <remove-project name="LineageOS/android_system_sepolicy" />
+  <project name="K9100ii/android_system_sepolicy" path="system/sepolicy" remote="github" revision="lineage-19.1" />
+
   <!-- Contains a patch for a possible slight improvement in screen recording quality - Optional if not desired -->
   <remove-project name="LineageOS/android_frameworks_base" />
   <project name="K9100ii/android_frameworks_base" path="frameworks/base" remote="github" revision="lineage-19.1" />
