@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- FORKS -->
-  <!-- Contain patches necessary for working around the old kernel not having (anywhere near the required level of) eBPF support
+  <!-- Contain patches necessary for working around the old kernel not having the required level of eBPF support
        or any cgroup v2 support - REQUIRED, otherwise no boot -->
   <remove-project name="LineageOS/android_frameworks_base" />
   <project name="K9100ii/android_frameworks_base" path="frameworks/base" remote="github" revision="lineage-21.0-nocgroupv2" />
@@ -15,10 +15,6 @@
   <project name="K9100ii/android_system_core" path="system/core" remote="github" revision="lineage-21.0-nocgroupv2" />
   <remove-project name="LineageOS/android_system_netd" />
   <project name="K9100ii/android_system_netd" path="system/netd" remote="github" revision="lineage-21.0-nobpf" />
-
-  <!-- Contains a patch for improving graphical performance - Technically optional -->
-  <remove-project name="LineageOS/android_frameworks_native" />
-  <project name="K9100ii/android_frameworks_native" path="frameworks/native" remote="github" revision="lineage-21.0" />
   <!-- END OF FORKS -->
 
   <!-- Device trees -->
