@@ -33,7 +33,7 @@
     <remove-project path="packages/modules/Connectivity" />
     <remove-project path="packages/modules/DnsResolver" />
     <remove-project path="system/bpf" />
-    <remove-project name="LineageOS/android_system_netd" />
+    <remove-project path="system/netd" />
     <remove-project name="crdroidandroid/android_system_core" />
     <remove-project name="crdroidandroid/android_frameworks_native" />
     
