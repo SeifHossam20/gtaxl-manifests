@@ -29,13 +29,13 @@
 
     <project name="android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-20" />
 
-    <remove-project name="crdroidandroid/android_frameworks_base" />
+    <remove-project name="RisingTechOSS/android_frameworks_base" />
     <remove-project path="packages/modules/Connectivity" />
     <remove-project path="packages/modules/DnsResolver" />
     <remove-project path="system/bpf" />
     <remove-project path="system/netd" />
-    <remove-project name="crdroidandroid/android_system_core" />
-    <remove-project name="crdroidandroid/android_frameworks_native" />
+    <remove-project name="RisingTechOSS/android_system_core" />
+    <remove-project name="RisingTechOSS/android_frameworks_native" />
     
     <!-- FORKS -->
     <project name="android_frameworks_base" path="frameworks/base" remote="K9100ii" revision="lineage-20.0-nocgroupv2" />
