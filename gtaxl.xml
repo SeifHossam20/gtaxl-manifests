@@ -5,7 +5,7 @@
        or any cgroup v2 support - REQUIRED, otherwise no boot -->
   <remove-project name="platform/frameworks/libs/net" />
   <project name="K9100ii/android_frameworks_libs_net" path="frameworks/libs/net" remote="github" revision="lineage-20.0-nobpf" />
-  <remove-project name="LineageOS/android_packages_modules_Connectivity" />
+  <remove-project name="packages/modules/Connectivity" />
   <project name="K9100ii/android_packages_modules_Connectivity" path="packages/modules/Connectivity" remote="github" revision="lineage-20.0-nobpf" />
   <remove-project name="platform/system/bpf" />
   <project name="K9100ii/android_system_bpf" path="system/bpf" remote="github" revision="lineage-20.0-nobpf" />
