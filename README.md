@@ -1,4 +1,4 @@
-# Manifest for building LineageOS 21.0 for gtaxlwifi, gtaxllte, gtanotexlwifi, and gtanotexllte
+# Manifest for building CrDroid v8 for gtaxlwifi, gtaxllte, gtanotexlwifi, and gtanotexllte
 
 `gtaxlwifi` is the codename for the WiFi-only variant of the Samsung Galaxy Tab A 10.1" (2016), with model SM-T580.
 
@@ -12,20 +12,20 @@ Some extremely basic instructions:
 
 These assume you have a good Linux build environment prepared with all prerequisite dependencies installed. If not, you should be able to find out how to prepare a build environment, and what dependencies you should have installed for your specific Linux distribution, by searching elsewhere.
 
-- Make a new directory for LineageOS 21.0 sources and enter it:
+- Make a new directory for CrDroid 8 sources and enter it:
 ```
-mkdir lineage-21.0
-cd lineage-21.0
+mkdir crdroid-8
+cd crdroid-8
 ```
 
-- Initialize repo in this directory with Lineage's android.git repository:
+- Initialize repo in this directory with CrDroid's android.git repository:
 ```
-repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
+repo init -u https://github.com/crdroidandroid/android.git -b 12.1 --git-lfs
 ```
 
 - Clone this repository to .repo/local_manifests for the manifest, gtaxl.xml, containing the repositories needed to build for these devices:
 ```
-git clone https://github.com/SeifHossam20/gtaxl-manifests.git -b 14.1 .repo/local_manifests
+git clone https://github.com/SeifHossam20/gtaxl-manifests.git -b crdroid-12.1 .repo/local_manifests
 ```
 
 - Sync all of the repositories in manifests (including LineageOS manifests):
@@ -36,15 +36,15 @@ repo sync --force-sync --no-tags --no-clone-bundle -c
 - Forks of LineageOS repositories may become out-of-date from new changes until he (@K9100ii) get around to updating them again. Before building, you'll need to go through gtaxl.xml, and, for forks that have remove-project lines with names starting with "LineageOS/", update (rebase) them from upstream repositories. For example, for frameworks/base (note the second and third commands only need to be ran once per repository):
 ```
 cd frameworks/base
-git remote add lineage https://github.com/LineageOS/android_frameworks_base
+git remote add crdroid https://github.com/crdroidandroid/android_frameworks_base
 git config pull.rebase true
-git pull lineage lineage-21.0
+git pull crdroid 12.1
 cd ../..
 ```
 
-- Finally, build as you like. For example, for a recovery-installable package (signed using public test keys) for gtaxlwifi:
+- Finally, build as you like. For example, for a recovery-installable package for gtaxlwifi:
 ```
 . build/envsetup.sh
-lunch lineage_gtaxlwifi-ap2a-userdebug
-mka otapackage
+lunch lineage_gtaxllte-userdebug
+mka bacon
 ```
