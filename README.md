@@ -45,6 +45,6 @@ cd ../..
 - Finally, build as you like. For example, for a recovery-installable package (signed using public test keys) for gtaxlwifi:
 ```
 . build/envsetup.sh
-lunch lineage_gtaxllte-ap2a-userdebug
+lunch lineage_gtaxllte-userdebug
 m evolution
 ```
