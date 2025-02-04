@@ -7,16 +7,16 @@
  
   <!-- Device trees -->
   <project name="android_device_samsung_gtaxl-common" path="device/samsung/gtaxl-common" remote="SeifHossam20" revision="lineage-21" />
-  <project name="android_device_samsung_gtaxlwifi" path="device/samsung/gtaxlwifi" remote="K9100ii" revision="lineage-21" />
-  <project name="android_device_samsung_gtaxllte" path="device/samsung/gtaxllte" remote="K9100ii" revision="lineage-21" />
-  <project name="android_device_samsung_gtanotexlwifi" path="device/samsung/gtanotexlwifi" remote="K9100ii" revision="lineage-21" />
-  <project name="android_device_samsung_gtanotexllte" path="device/samsung/gtanotexllte" remote="K9100ii" revision="lineage-21" />
+  <project name="android_device_samsung_gtaxlwifi" path="device/samsung/gtaxlwifi" remote="SeifHossam20" revision="lineage-21" />
+  <project name="android_device_samsung_gtaxllte" path="device/samsung/gtaxllte" remote="SeifHossam20" revision="lineage-21" />
+  <project name="android_device_samsung_gtanotexlwifi" path="device/samsung/gtanotexlwifi" remote="SeifHossam20" revision="lineage-21" />
+  <project name="android_device_samsung_gtanotexllte" path="device/samsung/gtanotexllte" remote="SeifHossam20" revision="lineage-21" />
   <!-- Vendor trees -->
-  <project name="android_vendor_samsung_gtaxl-common" path="vendor/samsung/gtaxl-common" remote="K9100ii" revision="lineage-21" />
-  <project name="android_vendor_samsung_gtaxlwifi" path="vendor/samsung/gtaxlwifi" remote="K9100ii" revision="lineage-21" />
-  <project name="android_vendor_samsung_gtaxllte" path="vendor/samsung/gtaxllte" remote="K9100ii" revision="lineage-21" />
+  <project name="android_vendor_samsung_gtaxl-common" path="vendor/samsung/gtaxl-common" remote="SeifHossam20" revision="lineage-21" />
+  <project name="android_vendor_samsung_gtaxlwifi" path="vendor/samsung/gtaxlwifi" remote="SeifHossam20" revision="lineage-21" />
+  <project name="android_vendor_samsung_gtaxllte" path="vendor/samsung/gtaxllte" remote="SeifHossam20" revision="lineage-21" />
   <!-- Kernel sources -->
-  <project name="android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="K9100ii" revision="lineage-21" />
+  <project name="android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="SeifHossam20" revision="lineage-21" />
   <!-- Linaro SLSI BSP sources -->
   <project name="android_hardware_samsung_slsi-linaro_codec2" path="hardware/samsung_slsi-linaro/codec2" remote="K9100ii" revision="lineage-21" />
   <project name="android_hardware_samsung_slsi-linaro_config" path="hardware/samsung_slsi-linaro/config" remote="K9100ii" revision="lineage-21" />
@@ -29,12 +29,11 @@
   <project name="android_hardware_samsung" path="hardware/samsung" remote="K9100ii" revision="lineage-21" />
 
   <remove-project name="android_frameworks_base" />
-  <remove-project name="crdroidandroid/android_packages_modules_Connectivity" />
+  <remove-project name="LineageOS/android_packages_modules_Connectivity" />
   <remove-project name="platform/packages/modules/DnsResolver" />
   <remove-project name="LineageOS/android_system_bpf" />
-  <remove-project name="crdroidandroid/android_system_netd" />
+  <remove-project name="LineageOS/android_system_netd" />
   <remove-project name="android_system_core" />
-  <remove-project name="android_frameworks_native" />
  <!-- FORKS -->
   <!-- Contain patches necessary for working around the old kernel not having (anywhere near the required level of) eBPF support
        or any cgroup v2 support - REQUIRED, otherwise no boot -->
@@ -45,7 +44,5 @@
   <project name="android_system_core" path="system/core" remote="K9100ii" revision="lineage-21.0-nocgroupv2" />
   <project name="android_system_netd" path="system/netd" remote="K9100ii" revision="lineage-21.0-nobpf" />
 
-  <!-- Contains a patch for improving graphical performance - Technically optional -->
-  <project name="android_frameworks_native" path="frameworks/native" remote="K9100ii" revision="lineage-21.0" />
   <!-- END OF FORKS -->
 </manifest>
