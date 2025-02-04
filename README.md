@@ -1,4 +1,4 @@
-# Manifest for building LineageOS 21.0 for gtaxlwifi, gtaxllte, gtanotexlwifi, and gtanotexllte
+# Manifest for building Rising 6 for gtaxlwifi, gtaxllte, gtanotexlwifi, and gtanotexllte
 
 `gtaxlwifi` is the codename for the WiFi-only variant of the Samsung Galaxy Tab A 10.1" (2016), with model SM-T580.
 
@@ -14,18 +14,18 @@ These assume you have a good Linux build environment prepared with all prerequis
 
 - Make a new directory for LineageOS 21.0 sources and enter it:
 ```
-mkdir lineage-21.0
-cd lineage-21.0
+mkdir rising-6
+cd rising-6
 ```
 
 - Initialize repo in this directory with Lineage's android.git repository:
 ```
-repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
+repo init -u https://github.com/RisingOS-Revived/android -b fifteen --git-lfs
 ```
 
 - Clone this repository to .repo/local_manifests for the manifest, gtaxl.xml, containing the repositories needed to build for these devices:
 ```
-git clone https://github.com/SeifHossam20/gtaxl-manifests.git -b 14.1 .repo/local_manifests
+git clone https://github.com/SeifHossam20/gtaxl-manifests.git -b rising-6 .repo/local_manifests
 ```
 
 - Sync all of the repositories in manifests (including LineageOS manifests):
@@ -36,15 +36,15 @@ repo sync --force-sync --no-tags --no-clone-bundle -c
 - Forks of LineageOS repositories may become out-of-date from new changes until he (@K9100ii) get around to updating them again. Before building, you'll need to go through gtaxl.xml, and, for forks that have remove-project lines with names starting with "LineageOS/", update (rebase) them from upstream repositories. For example, for frameworks/base (note the second and third commands only need to be ran once per repository):
 ```
 cd frameworks/base
-git remote add lineage https://github.com/LineageOS/android_frameworks_base
+git remote add rising https://github.com/RisingOS-Revived/android_frameworks_base
 git config pull.rebase true
-git pull lineage lineage-21.0
+git pull rising fifteen
 cd ../..
 ```
 
 - Finally, build as you like. For example, for a recovery-installable package (signed using public test keys) for gtaxlwifi:
 ```
 . build/envsetup.sh
-lunch lineage_gtaxlwifi-ap2a-userdebug
-mka otapackage
+lunch lineage_gtaxlwifi-userdebug
+mka bacon
 ```
