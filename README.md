@@ -18,7 +18,7 @@ mkdir evolution-9
 cd evolution-9
 ```
 
-- Initialize repo in this directory with Lineage's android.git repository:
+- Initialize repo in this directory with Evolution's android.git repository:
 ```
 repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs
 ```
@@ -28,12 +28,12 @@ repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs
 git clone https://github.com/SeifHossam20/gtaxl-manifests.git -b evo-9 .repo/local_manifests
 ```
 
-- Sync all of the repositories in manifests (including LineageOS manifests):
+- Sync all of the repositories in manifests (including Evolution X manifests):
 ```
 repo sync --force-sync --no-tags --no-clone-bundle -c
 ```
 
-- Forks of LineageOS repositories may become out-of-date from new changes until he (@K9100ii) get around to updating them again. Before building, you'll need to go through gtaxl.xml, and, for forks that have remove-project lines with names starting with "LineageOS/", update (rebase) them from upstream repositories. For example, for frameworks/base (note the second and third commands only need to be ran once per repository):
+- Forks of Evolution X repositories may become out-of-date from new changes until he (@K9100ii) get around to updating them again. Before building, you'll need to go through gtaxl.xml, and, for forks that have remove-project lines with names starting with "LineageOS/", update (rebase) them from upstream repositories. For example, for frameworks/base (note the second and third commands only need to be ran once per repository):
 ```
 cd frameworks/base
 git remote add evo https://github.com/Evolution-X/frameworks_base
@@ -42,7 +42,7 @@ git pull evo udc
 cd ../..
 ```
 
-- Finally, build as you like. For example, for a recovery-installable package (signed using public test keys) for gtaxlwifi:
+- Finally, build as you like. For example, for a recovery-installable package (signed using public test keys) for gtaxllte:
 ```
 . build/envsetup.sh
 lunch lineage_gtaxllte-userdebug
