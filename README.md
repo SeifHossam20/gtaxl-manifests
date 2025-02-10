@@ -1,4 +1,4 @@
-# Manifest for building Evolution X 9 for gtaxlwifi, gtaxllte, gtanotexlwifi, and gtanotexllte
+# Manifest for building Superior 14 for gtaxlwifi, gtaxllte, gtanotexlwifi, and gtanotexllte
 
 `gtaxlwifi` is the codename for the WiFi-only variant of the Samsung Galaxy Tab A 10.1" (2016), with model SM-T580.
 
@@ -14,37 +14,37 @@ These assume you have a good Linux build environment prepared with all prerequis
 
 - Make a new directory for Evolution X sources and enter it:
 ```
-mkdir evolution-9
-cd evolution-9
+mkdir superior-14
+cd superior-14
 ```
 
-- Initialize repo in this directory with Evolution's android.git repository:
+- Initialize repo in this directory with Superior's android.git repository:
 ```
-repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs
+repo init -u https://github.com/SuperiorOS/manifest.git -b fourteen --git-lfs
 ```
 
 - Clone this repository to .repo/local_manifests for the manifest, gtaxl.xml, containing the repositories needed to build for these devices:
 ```
-git clone https://github.com/SeifHossam20/gtaxl-manifests.git -b evo-9 .repo/local_manifests
+git clone https://github.com/SeifHossam20/gtaxl-manifests.git -b superior .repo/local_manifests
 ```
 
-- Sync all of the repositories in manifests (including Evolution X manifests):
+- Sync all of the repositories in manifests (including Superior manifests):
 ```
 repo sync --force-sync --no-tags --no-clone-bundle -c
 ```
 
-- Forks of Evolution X repositories may become out-of-date from new changes until he (@K9100ii) get around to updating them again. Before building, you'll need to go through gtaxl.xml, and, for forks that have remove-project lines with names starting with "LineageOS/", update (rebase) them from upstream repositories. For example, for frameworks/base (note the second and third commands only need to be ran once per repository):
+- Forks of Superior repositories may become out-of-date from new changes until he (@K9100ii) get around to updating them again. Before building, you'll need to go through gtaxl.xml, and, for forks that have remove-project lines, update (rebase) them from upstream repositories. For example, for frameworks/base (note the second and third commands only need to be ran once per repository):
 ```
 cd frameworks/base
-git remote add evo https://github.com/Evolution-X/frameworks_base
+git remote add superior https://github.com/SuperiorOS/android_frameworks_base
 git config pull.rebase true
-git pull evo udc
+git pull superior fourteen
 cd ../..
 ```
 
 - Finally, build as you like. For example, for a recovery-installable package (signed using public test keys) for gtaxllte:
 ```
 . build/envsetup.sh
-lunch lineage_gtaxllte-userdebug
-m evolution
+breakfast gtaxllte
+m bacon
 ```
