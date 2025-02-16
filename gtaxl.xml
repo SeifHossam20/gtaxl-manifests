@@ -4,6 +4,8 @@
 		fetch="https://github.com/K9100ii" />
 	<remote  name="SeifHossam20"
 		fetch="https://github.com/SeifHossam20" />
+	<remote  name="SeifHossam17"
+		fetch="https://github.com/SeifHossam17" />
  
   <!-- Device trees -->
   <project name="android_device_samsung_gtaxl-common" path="device/samsung/gtaxl-common" remote="SeifHossam20" revision="crdroid-14" />
