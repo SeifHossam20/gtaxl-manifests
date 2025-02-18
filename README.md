@@ -14,18 +14,18 @@ These assume you have a good Linux build environment prepared with all prerequis
 
 - Make a new directory for LineageOS 20.0 sources and enter it:
 ```
-mkdir lineage-20.0
-cd lineage-20.0
+mkdir crdroid-13
+cd crdroid-13
 ```
 
 - Initialize repo in this directory with Lineage's android.git repository:
 ```
-repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
+repo init -u https://github.com/crdroidandroid/android.git -b 13.0 --git-lfs
 ```
 
 - Clone this repository to .repo/local_manifests for the manifest, gtaxl.xml, containing the repositories needed to build for these devices:
 ```
-git clone https://github.com/K9100ii/gtaxl-manifests.git -b lineage-20.0 .repo/local_manifests
+git clone https://github.com/SeifHossam20/gtaxl-manifests.git -b crdroid-13-2 .repo/local_manifests
 ```
 
 - Sync all of the repositories in manifests (including LineageOS manifests):
@@ -45,6 +45,6 @@ cd ../..
 - Finally, build as you like. For example, for a recovery-installable package for gtaxlwifi:
 ```
 . build/envsetup.sh
-lunch lineage_gtaxlwifi-userdebug
-mka otapackage
+lunch lineage_gtaxllte-userdebug
+m bacon
 ```
